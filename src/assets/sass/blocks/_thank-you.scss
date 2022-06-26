@@ -1,0 +1,83 @@
+.thank-you {
+  .header {
+   &__btn {
+    align-items: center;
+    display: flex;
+   }
+    .link {
+      margin-right: 1.5rem;
+    }
+  }
+  .section {
+    &__main-screen {
+      padding: 13rem 0;
+    }
+  }
+  .main-screen {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 5rem;
+    align-items: center;
+    padding: 3rem 0;
+    h1 {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-family: Arimo;
+      margin-bottom: 1rem;
+    }
+    &__text {
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+
+      .blur-circle{
+        top: 0;
+        left: -15rem;
+
+
+      }
+    }
+    .course-name {
+      top: -10rem;
+      left: -10rem;
+      z-index: -1;
+    }
+  }
+  .subscribe {
+    .text {
+      margin-bottom: 4rem;
+      width: 80%;
+    }
+    &__btns {
+      max-width: 35rem;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #c7524f;
+      border-radius: 30px;
+    }
+    &__link{
+      width: 50%;
+      padding: 2rem;
+      text-align: center;
+      &:hover {
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      
+      
+    }
+    &__link:nth-child(1){
+      border-right: 1px solid #FFFFFF;
+    }
+
+  }
+}

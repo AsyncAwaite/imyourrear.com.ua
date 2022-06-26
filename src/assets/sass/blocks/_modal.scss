@@ -1,0 +1,111 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur( 15px );
+  -webkit-backdrop-filter: blur( 15px );
+  background: rgba( 0, 0, 0, 0.5 );
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+ display: flex;
+ padding: 2rem;
+ transition: all 0.3s;
+  &__body {
+    position: relative;
+    
+    padding: 2rem 8rem;
+    background: #FFFFFF;
+
+    max-width: 87rem;
+    width: 100%;
+    min-height: 50rem;
+
+h2{
+  margin: 3rem 0 2.5rem;
+}
+
+.subtitle{
+  margin-bottom: 4.5rem;
+}
+.form{
+  width: 100%;
+  justify-content: space-between;
+  column-gap: 3rem;
+  margin-bottom: 2rem;
+ 
+  &__item{
+   width: 100%; input:first-child{width: 10rem;
+
+  }
+  input:nth-child(2){
+    width: 100%;
+
+  }
+  }
+  // .btn{
+  //   flex-shrink: 0;
+  // }
+}
+input{
+  padding: 2rem 0;
+  display: flex;align-items: center;
+  text-align: center;
+  width: auto;
+  border-width: 3px;
+}
+
+  }
+
+
+  
+
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+
+  
+  }
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s;
+
+  }
+
+&__close{
+  
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;height: 3rem;
+  transition: all .3s linear;
+  z-index: 80;
+  &:hover{
+transform: rotate(90deg);
+  }
+ 
+
+}
+.payment{
+  justify-content: space-between;
+  &__info{
+margin-right: 4rem;
+    div{
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__number{
+
+    .form__item{
+      input:nth-child(2){
+        width: 30rem;
+      }
+
+    }
+  }
+}
+
+
+}
+

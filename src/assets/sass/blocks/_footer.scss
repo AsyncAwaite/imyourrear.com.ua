@@ -1,0 +1,34 @@
+.footer {
+.logo{
+  width: 100%;
+    height: 19rem;
+}
+&__projects{
+  padding: 5rem 0;
+  .projects-list{
+    &__item{
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+&__info{
+  margin-top: 2rem;
+  a:first-child{
+    margin-right: 6rem;
+  }
+
+}
+&__contacts{
+  padding: 5rem 0;
+  h3, a{
+    margin-bottom: 1rem;
+  }
+}
+&__link{
+  
+  &:hover{
+    color:$yellow;
+  }
+}
+
+}

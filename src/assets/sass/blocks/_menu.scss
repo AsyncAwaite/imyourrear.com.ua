@@ -1,0 +1,21 @@
+.menu {
+  
+  height: 100%;
+  
+  &__item {
+margin-right: 5rem;
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+
+position: relative;
+    a{
+          color: $fc;    &:hover{
+color: $yellow;
+    }
+    }
+
+
+  }
+}

@@ -1,0 +1,425 @@
+@media (min-width: 1500px) {
+
+.section{
+  padding: 8rem 0;
+  &__title{
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+  }
+  &__about{
+    padding-top: 10rem;
+  }
+}  .fz-18 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  .fz-20 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  .fz-24 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  .fz-36 {
+    font-size: 3.6rem;
+    line-height: 3.8rem;
+  }
+
+  .fz-40 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .diveder{
+    height: 15rem;
+  }
+//
+
+}
+
+@media (max-width: 1200px) {
+  .projects-list{
+    &__item{
+  
+
+  
+      &.active{
+                    
+        &::after{
+
+          bottom: -1.67rem;
+
+  
+        }
+   
+       
+  
+      }
+
+    }
+  }
+  .main-screen{
+    &__img{
+      .image{
+        img{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  .main-screen{
+    &__img{
+      &::before{
+
+        height: 65%;
+ 
+
+      }
+      &::after{
+        height: 75%;
+        
+        
+      }
+      .image{
+        img{
+          transform: scale(.95);
+        }
+      }
+    }
+  }
+.about{
+  .swiper{
+    height: auto;
+    &__img{
+      height: 45rem;
+
+    }
+
+
+  }
+  .title-big{
+    top: 45rem;
+  }
+  &-us{
+  &__social{
+    h3{
+      text-align: center;
+    }
+  }
+  }
+}
+.about {
+  &__descr{
+    padding: 2rem 0;
+   .descr{
+     padding-left: 0;
+   }
+   .btn{
+     margin-left: 0;
+   }
+  }}
+.modal{
+  &__body{
+    .form{
+      input:first-child{
+        width: 8rem;
+      }
+    }
+  }
+}
+}
+
+@media (max-width: 768px) {
+.header{    top: 0;
+  padding-top: 2rem;
+  &__info{
+    display: flex;
+    align-items: center;
+    width: auto;
+
+  }
+  &-wrapper{
+    justify-content: space-between;
+  }
+  &__logo{
+    margin-right: 0;
+.logo{
+  width: 9rem;height: 10rem;
+}
+  }
+  &__projects, &__nav{
+    margin-bottom: 2rem;
+  }
+  &__menu{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    display: flex;
+    justify-content: center;align-items: center;
+    flex-direction: column;
+    transition: left .35s linear;
+    &.active{left: 0;}
+    .projects-list{
+      flex-direction: column;
+      &__item{
+   margin: 0 0 2rem;
+   font-size: 2rem;
+   line-height: 2.2rem;
+        &.active{
+          color: $yellow;
+          font-weight: 600;
+
+          &::after{
+            content: none;
+          }
+        }
+      }
+    }
+    .menu{
+      flex-direction: column;
+      &__item{
+   margin: 0 0 2rem;
+   font-size: 2rem;
+   line-height: 2.2rem;}
+    }
+  }
+
+}
+.section{
+  &__main-screen{
+    padding: 12rem 0 5rem;
+  }
+  &__project{
+    padding-top: 8rem;
+  }
+}
+.main-screen{
+  .descr{
+    margin-bottom: 2rem;
+  }
+  h2{
+    margin-bottom: 1rem;
+  }
+.wrapper{
+  padding: 2rem 0;
+
+}
+  .row{
+
+    .col-md-7{
+      order: 1;
+    }
+    .col-md-5{
+      order: 2;
+    }
+  }
+  &__img{
+height: 35rem;
+&::before{
+  left: 0;
+  transform: scaleX(2) translateX(0);
+}
+
+padding-left: 0;
+
+  }
+  &__descr{
+    padding-right: 0;
+    height: auto;margin-top: 3rem;
+  }
+}
+.about{
+  &-us{
+
+  
+    &__descr{ 
+       padding: 5rem 0;
+      &::after{
+        z-index: -1;
+        transform: scaleX(2) translateX(0);
+      }
+      .text{
+        margin-bottom: 4rem;
+      }
+    }
+&__social{
+  .wrapper{
+    height: 100%;
+    padding: 2rem;
+    h3{
+      margin-bottom: 3rem;
+    }
+    &::after{
+      left: 0;
+      transform: scaleX(2);
+    }
+  }
+}
+    
+  }
+}
+.footer{
+  .logo{
+    height: 16rem;
+    display: contents;
+  }
+  &__projects, &__info{
+    padding: 3rem;
+  }
+  &__contacts{
+    padding: 2rem 0;
+    text-align: center;
+  }
+}
+.pagination{
+  top: -6rem;
+}
+.modal{
+  &__body{
+    .form{
+      flex-wrap: wrap;
+      &__item{
+        margin-bottom: 2rem;
+      }
+      .btn{
+        width: 100%;
+      }
+    }
+  }
+  .payment{
+    flex-wrap: wrap;
+  }
+}
+}
+
+@media (max-width: 600px) {
+  .header{
+
+    padding-top: 1rem;
+background: rgba(239, 172, 0, 0.15);
+&-wrapper{
+  align-items: end;
+}
+&__logo{
+  .logo{
+    
+    margin-bottom: -5px;
+  }
+}
+  }
+  .section{
+    &__main-screen {
+      padding: 10.5rem 0 0;
+      min-height: 100vh;
+      height: 100%;
+      }
+      &__about-us{
+        padding-bottom: 5rem;
+      }
+  }
+.main-screen{
+  .wrapper{
+    padding: 0;
+    .row{
+      height: auto;
+    }
+  }
+  &__img{
+    
+height: 30rem;
+   &::after{
+     left: -2rem;
+     height: 85%;
+   }
+  }
+}
+.about{
+  .swiper{
+    height: auto;
+    &__img{
+      height: 30rem;
+
+    }
+
+  }
+  .title-big{
+    top: 30rem;
+  }
+}
+.footer{
+
+  &__info{
+    a:first-child{
+      margin-right: 3rem;
+    }
+  
+  
+  }
+
+}
+.modal{
+  &__body{
+    padding: 2rem;
+    h2{
+      line-height: 30px;
+    }
+    .subtitle{
+      margin-bottom: 2.5rem;
+    }
+    .form{
+      flex-wrap: wrap;
+      &__item{
+        flex-wrap: wrap;  input:first-child{width: 100%;
+
+   }
+   input:nth-child(2){
+     width: 100%!important;
+   }
+
+   input{
+     padding: 1rem 0;
+     font-size: 12px;
+   }
+      }
+   .btn{
+     margin-bottom: 1rem;
+   }
+ 
+    }
+  }
+}
+
+}
+
+
+@media (max-width: 576px) {
+  .footer{
+    &__projects, &__info{
+      padding: 2rem 0;
+      text-align: center;
+    }
+    &__info{
+      a:first-child{
+        margin-right: 0;
+      }
+    
+      a{
+        display: block;
+        margin-bottom: 1rem;
+        
+      }
+    }
+    .projects-list__item{
+      margin-right: 0;
+    }
+
+  }
+}

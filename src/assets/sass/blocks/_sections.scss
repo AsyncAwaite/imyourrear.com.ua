@@ -1,0 +1,26 @@
+.section {
+  padding: size(80, 30) 0;
+&__main-screen{
+  height: 100vh;
+  
+  padding: 15rem 0 5rem;
+position: relative;
+
+
+  z-index: 1;
+
+
+
+}
+&__project{
+  padding-top: 10rem;
+}
+&__about-us{
+  padding-bottom: 8rem;
+}
+&__footer{
+  padding-bottom: 4rem;
+  background: #415262;
+}
+
+}

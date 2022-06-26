@@ -1,0 +1,44 @@
+.project {
+&__descr{
+  padding: 4rem 0 4rem 4rem;
+  .text{
+    margin-bottom: 4rem;
+  }
+}
+&__gallery{
+overflow: hidden;
+margin-bottom: 3rem;
+ 
+}
+&__img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.swiper{
+&__img{
+  position: relative;
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+&-project{
+  height: 21rem;
+
+
+}
+
+}
+}

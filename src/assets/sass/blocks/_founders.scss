@@ -1,0 +1,25 @@
+.founders{
+  h2{
+    margin-bottom: 2rem;
+  }
+  &__item{
+    margin-bottom: 2rem;
+    .name{
+font-size: 20px;
+line-height: 24px;
+a{
+  color: $fc;
+  transition: color .3s linear;
+&:hover{
+  text-decoration: none;
+  color: $ac;
+  
+}
+}
+    }
+    .role{
+      color: #999;
+      font-size: 16px;line-height: 18px;
+    }
+  }
+}

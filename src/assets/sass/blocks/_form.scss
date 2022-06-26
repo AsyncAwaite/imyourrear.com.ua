@@ -1,0 +1,155 @@
+.form {
+  &__title{
+    margin-bottom: 2rem;
+  }
+  &__subtitle{
+    margin-bottom: 3.5rem;
+  }
+  &__data{
+    @media (max-width: 992px) {
+ flex-wrap: wrap;
+ 
+    }
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    span{
+      padding-left: 2rem;
+      margin-bottom: 0.8rem;
+      @media (max-width: 576px) {
+        padding-left: 0;
+           } 
+    }
+    &_btn{
+      align-self: center;
+      margin-right: 0;
+      margin-left: 3rem;
+      .btn{
+        background: #FFD600;
+border-radius: 10px;
+&:hover{
+  background-color: darken($color: #FFD600, $amount: 5);
+}
+      }
+    }
+    input, textarea{
+      color: #fff;
+      width: 100%;
+      border: 2px solid #FFFFFF;
+background: transparent;
+border-radius: 1rem;
+padding: 2rem;
+transition: all .3s ease-in-out;
+
+&::placeholder{
+font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+&:focus-visible{
+  outline: none;
+  border: 2px solid $yellow;
+}
+    } 
+    textarea{
+      resize: none;
+      height: 12rem;
+      overflow-y: scroll;
+    }
+    &.valid{
+      input{
+        background: rgba(255, 255, 255, 0.4);
+      }
+    }
+    &.invalid{
+      color: #FE0101;
+      input, textarea{
+        color: #FE0101;
+        border: 2px solid #FE0101;
+      }
+    }
+
+    &_main {
+      margin-bottom: 0;
+      margin-right: 0;
+      grid-column: 1fr;
+      input, textarea{
+        border: 1px solid $fc;
+        color: rgba(70, 70, 70, 0.3);
+        &::placeholder{
+          font-weight: 700;
+          color: rgba(70, 70, 70, 0.3);
+        }
+        &:focus-visible{
+            outline: none;
+            border: 1px solid $yellow;
+        }
+      }
+      &.valid{
+        input{
+         background: #A2D7F1;
+         border: 1px solid transparent;
+          color: #fff;
+        }
+      }
+      &.invalid{
+
+        input, textarea{
+   
+          border: 1px solid #FE0101;
+        }
+      }
+      &.form{
+         &__item{
+          &:nth-child(3){
+                grid-column: 1/4;
+                grid-row: 2/3;
+            
+          }
+        } 
+      }
+
+
+
+
+
+}
+  }
+   &__tg{
+    width: 100%;
+    grid-column: 1/4;
+    margin-top: 2rem;
+      div, a{
+        width: 50%;
+      }
+  }
+  &__btns{
+    justify-content: end;
+  }
+  &__message{
+    height: 2.4rem;
+    padding: .5rem 2rem;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__help{
+  display: grid;
+  grid-template-columns: repeat(2,1.5fr) 2fr;
+  column-gap: 1.5rem;
+    [type="submit"]{
+      grid-column: 3/4;
+      grid-row: 1/2;
+      margin-left: 1.5rem;
+      height: 63px;
+      align-self: center;
+      position: relative;
+      z-index: 10;
+
+    }
+  }  
+
+}

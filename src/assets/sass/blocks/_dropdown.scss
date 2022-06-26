@@ -1,0 +1,93 @@
+.dropdown {
+  font-size: 18px;
+  line-height: 4rem;
+  height: 4rem;
+  color: #666;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  border: 2px solid $ac;
+  cursor: pointer;
+  &__menu {
+    top: 3.5rem;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    padding: 2rem .6rem;
+    background: #fff;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    transition: all 0.3s linear;
+    
+    border: 2px solid $ac;
+    ul {
+      overflow-y: scroll;
+      list-style: none;
+      max-height: 0;
+      transition: max-height 0.5s linear;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    transition: all 0.3s linear;
+    padding: 0 1.5rem;
+    background: transparent;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    &:hover {
+      background: $ac;
+    }
+ 
+  }
+  &__btn {
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);;
+    right: 1.5rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border: none;
+    background: $ac;
+    border-radius: 50%;
+    transition: transform 0.5s linear;
+    .icon {
+      width: 1.6rem;
+      height: 1rem;
+    }
+    &:focus-visible, &:focus{
+      outline: none;;
+    }
+  }
+  &__selected {
+    top: 0;
+    left: 1.5rem;
+
+    &.select {
+      color: $fc;
+    }
+  }
+  &.open {
+    overflow: visible;
+    .dropdown {
+      &__menu {
+        opacity: 1;
+        z-index: 100;
+
+        ul {
+          max-height: 35rem;
+        }
+      }
+      &__btn {
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+  }
+}
+@keyframes height {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}

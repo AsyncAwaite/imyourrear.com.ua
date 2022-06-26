@@ -1,0 +1,101 @@
+@import "base/func";
+// .t-main {
+//   color: $main!important;
+// }
+.t-yellow {
+  color: $yellow;
+}
+.t-blue {
+  color: $blue;
+}
+.t-white{
+  color: #fff!important;
+}
+.t-fc{
+  color: $fc;
+}
+
+
+
+//FONT
+.t-upper {
+  text-transform: uppercase;
+}
+.t-center {
+  text-align: center;
+}
+.fz-14 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+.fz-16 {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+.fz-18 {
+  font-size: size(18, 16)!important;
+  line-height: size(20, 18)!important;
+}
+.fz-20 {
+  font-size: size(20, 18)!important;
+  line-height: size(24, 20)!important;
+}
+.fz-24 {
+  font-size: size(24, 20);
+  line-height: size(28, 24);
+}
+
+.fz-36 {
+  font-size: size(36, 22);
+  line-height: size(42, 38);
+}
+
+.fz-40 {
+  font-size: size(40, 22);
+  line-height: size(48, 26);
+}
+
+.f-400 {
+  font-weight: 400;
+}
+.f-500 {
+  font-weight: 500;
+}
+
+.f-600 {
+  font-weight: 600;
+}
+
+//FONT
+
+
+.m-a {
+  margin: 0 auto;
+}
+
+
+.bd-blue{
+  border: 5px solid $blue;
+}
+.bd-yellow{
+  border: 5px solid $yellow;
+}
+
+.bg-gradient{
+  background: linear-gradient(18.66deg, #415262 0.73%, #628C9C 82.45%);
+}
+
+.none {
+  display: none;
+}
+
+.pos-a {
+  position: absolute!important;
+}
+.pos-r {
+  position: relative!important;
+}
+
+.h-100{
+  height: 100%;
+}

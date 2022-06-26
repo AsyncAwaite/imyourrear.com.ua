@@ -1,0 +1,43 @@
+.info {
+
+  &__item {
+    position: relative;
+          &::before{
+        position: absolute;
+
+        font-weight: 700;
+font-size: size(120, 40);
+color: rgba(255, 199, 0, 0.15);
+      }
+.number{
+  padding-left: 2rem;
+}
+    .descr{
+     margin-left: auto;
+      width: 70%;
+    }
+    &.first{
+      &::before{
+
+        content: '15330';
+
+      }
+    }
+    &.second{
+      &::before{
+
+        content: '330';
+
+      }
+    }
+    &.third{
+      &::before{
+
+        content: '130';
+
+      }
+    }
+
+  }
+
+}
